@@ -13,7 +13,7 @@
       - springboot-mysql-net
 
   backend:
-    image: mohanreddy18/external-Lab-backend:latest
+    image: mohanreddy18/external-lab-backend:latest
     container_name: springboot
     ports:
       - "2025:2000"
@@ -24,7 +24,7 @@
       - springboot-mysql-net
 
   frontend:
-    image: mohanreddy18/docker-frontend:latest
+    image: mohanreddy18/external-lab-frontend:latest
     container_name: react
     ports:
       - "3000:80"
