@@ -39,7 +39,7 @@ jobs:
       - name: Build and Push Frontend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./todo-forntend
-          file: ./todo-forntend/frontend.Dockerfile
+          context: ./todo-frontend
+          file: ./todo-frontend/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/external-lab-frontend:latest
